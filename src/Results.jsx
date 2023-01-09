@@ -10,12 +10,12 @@ const Results = ({ pets }) => {
                     <Pet
                         //{...pet} -> spread operator, it will pass all the properties of the pet object to the Pet component
                         name={pet.name}
+                        id={pet.id}
                         animal={pet.animal}
                         breed={pet.breed}
                         key={pet.id}
                         images={pet.images}
                         location={`${pet.city}, ${pet.state}`}
-                        id={pet.id}
                     />
                 ))
             )}

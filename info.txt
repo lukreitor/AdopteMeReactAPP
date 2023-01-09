@@ -1,0 +1,58 @@
+npx create-react-app ./
+npm install --legacy-peer-deps
+create tailwind.config.js
+craco.config.js
+
+rafce 
+
+
+
+// frontend masters
+npm init -y
+
+npm install --save-dev prettier 
+npm i -D prettier@2.7.1
+create new file .prettierc
+in package.json add "prettier": "prettier --write ." to scripts, "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"", 
+npm run format
+
+eslint 
+npm install -D eslint@8.24.0 eslint-config-prettier@8.5.0
+new file .eslintrc.json
+npm tun lint
+npm run lint -- --debug -> show all errors
+npm run lint -- --fix -> fix all errors
+ npm install -D eslint-plugin-import@2.26.0 eslint-plugin-jsx-a11y@6.6.1 eslint-plugin-react@7.31.8
+ --> this goes in package json in extends
+        "plugin:import/erros",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+npm install -D eslint-plugin-react-hooks@4.6.0.
+
+// gitingore
+node_modules/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
+
+// vite || parcel is zero config and is an alternative to webpack and vite
+npm install -D vite@3.1.4 @vitejs/plugin-react@2.1.0
+new file vite.config.js
+in packagejson add "dev": "vite", "dev": "vite",
+        "build": "vite build",
+        "Preview": "vite preview",to scripts
+npm run dev
+
+// react 
+npm i react@18.2.0 react-dom@18.2.0
+to start a react app run nmp run dev
+
+
+// react-router 
+npm i react-router-dom@6.4.1
+
+// react query
+npm i @tanstack/react-query@4.10.1
